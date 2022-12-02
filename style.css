@@ -1,0 +1,505 @@
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@600&family=Montserrat:wght@200;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #232946;
+    color: #eebbc3;
+}
+
+#header {
+    width: 100%;
+    height: 100vh;
+
+}
+
+.logo h1{
+    font-family: 'Advent Pro', sans-serif;
+    font-size: 36px;
+    color: #eebbc3;
+    opacity: 100%;
+    letter-spacing: 2px;
+}
+
+.container {
+    padding: 10px 10%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+.dc a{
+    background: #eebbc3;
+    padding: 10px 20px;
+    color: #232946;
+    font-weight: bold;
+    border-radius: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+nav ul li a {
+    color: #b8c1ec;
+    opacity: 71%;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.intro {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    margin-top: 20%;
+    font-size: 40px;
+    color: white;
+    opacity: 80%;
+}
+
+.intro h1 {
+    font-family: 'Advent Pro', sans-serif;
+    font-size: 96px;
+    color: #eebbc3;
+    opacity: 71%;
+    letter-spacing: 5px;
+}
+
+.intro h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    color: #B8C1EC;
+    opacity: 71%;
+}
+
+nav ul li a:hover {
+    color: #fff;
+    opacity: 100%;
+}
+
+nav ul li:hover{
+    transform: translateY(-5px);
+    transition: all .4s ease-in;
+}
+
+.intro h1:hover {
+    transition: all .4s ease-in;
+    letter-spacing: 9px;
+    opacity: 100%;
+}
+
+
+/* ------------about------------- */
+#about {
+    padding: 100px 0;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-col-1 {
+    flex-basis: 60%;
+}
+
+.me {
+    width: 400px;
+    border-radius: 15px;
+}
+
+.about-col-1 h1 {
+    margin: 20px 40px;
+    font-family: 'Advent Pro', sans-serif;
+    font-size: 96px;
+    color: #eebbc3;
+    opacity: 71%;
+    letter-spacing: 5px;
+}
+
+.about-col-1 h1:hover {
+    transition: all .4s ease-in;
+    letter-spacing: 9px;
+    opacity: 100%;
+}
+
+.about-col-2 {
+    flex-basis: 35%;
+}
+
+.about-col-1 p {
+    font-family: 'Montserrat', sans-serif;
+    margin: 50px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 3px;
+    color: #B8C1EC;
+    opacity: 71%;
+}
+
+
+.words {
+    overflow: hidden;
+}
+
+.wrapper {
+    box-sizing: content-box;
+    box-shadow: 0 10px 15px;
+    display: flex;
+    width: 100%;
+    height: 90px;
+    padding: 50px 20px;
+    margin: 200px 0;
+    font-family: 'Advent Pro', sans-serif;
+    font-size: 70px;
+    color: #232946;
+    opacity: 100%;
+    letter-spacing: 5px;
+    justify-content: center;
+    background-color: #eebbc3;
+    opacity: 80%;
+}
+
+.txt {
+    display: block;
+    padding-left: 15px;
+    color: #232946;
+    opacity: 100%;
+    animation: spin_words 5s infinite;
+}
+
+@keyframes spin_words {
+    10% {
+        transform: translateY(-105%);
+    }
+
+    20% {
+        transform: translateY(-100%);
+    }
+
+    30% {
+        transform: translateY(-205%);
+    }
+
+    40% {
+        transform: translateY(-200%);
+    }
+
+    50% {
+        transform: translateY(-305%);
+    }
+
+    60% {
+        transform: translateY(-300%);
+    }
+
+    70% {
+        transform: translateY(-405%);
+    }
+
+    80% {
+        transform: translateY(-400%);
+    }
+
+    90% {
+        transform: translateY(-505%);
+    }
+
+    100% {
+        transform: translateY(-500%);
+    }
+}
+
+/* -----------------roles------------------- */
+.roles h1 {
+    
+    font-family: 'Advent Pro', sans-serif;
+    font-size: 96px;
+    color: #eebbc3;
+    opacity: 71%;
+    letter-spacing: 5px;
+    margin: 15px 50px;
+}
+
+.roles h1:hover {
+    transition: all .4s ease-in;
+    letter-spacing: 9px;
+    opacity: 100%;
+}
+
+.cont1 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    flex-wrap: wrap;
+    z-index: 1;
+}
+
+.cont1 .card {
+    position: relative;
+    width: 280px;
+    height: 400px;
+    margin: 30px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+}
+
+.cont1 .card .content {
+    padding: 20px;
+    text-align: center;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: 0.5s
+}
+
+.cont1 .card:hover .content{
+    transform: translateY(0px);
+    opacity: 1;
+
+}
+
+.cont1 .card .content h2 {
+    position: absolute;
+    top: -70px;
+    left: 20px;
+    font-size: 8em;
+    font-weight: bolder;
+    color: rgba(255, 255, 255, 0.05);
+    pointer-events: none;
+    font-family: 'Advent Pro', sans-serif;
+
+}
+
+.cont1 .card .content h3{
+    font-size: 1.7em;
+    z-index: 1;
+    font-family: 'Montserrat', sans-serif;
+    /* margin: 10px; */
+
+}
+.cont1 .card .content h4{
+    font-family: 'Montserrat', sans-serif;
+    opacity: 71%; 
+    margin: 10px;
+}
+
+.cont1 .card .content p{
+    
+    font-size: 1em;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    color: #B8C1EC;
+    opacity: 71%;
+}
+
+.cont1 .card .content a {
+position: relative;
+padding: 8px 20px;
+display: inline-block;
+margin-top: 15px;
+font-family: 'Montserrat', sans-serif ;
+color: #232946;
+background: #eebbc3;
+opacity: 71%;
+border-radius: 30px;
+text-decoration: none;
+font-weight: bold;
+box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* -------------------Contact--------------------- */
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    width: 100%;
+    background: #232946;
+    margin:  300px 0px;
+}
+
+.cont2{
+    position: relative;
+    z-index: 1000;
+    width: 100%;
+    max-width: 1000px;
+    padding: 50px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    backdrop-filter: blur(25px);
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+.cont2::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -40%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.05);
+    pointer-events: none;
+    transform: skewX(-15deg);
+}
+
+.cont2 h2{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Advent Pro', sans-serif;
+    font-size: 64px;
+    color: #eebbc3;
+    opacity: 71%;
+    letter-spacing: 5px;
+
+}
+
+.cont2 h2:hover {
+    transition: all .4s ease-in;
+    letter-spacing: 9px;
+    opacity: 100%;
+}
+
+.cont2 .row100{
+
+position: relative;
+width: 100%;
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(500px,1fr) );
+
+}
+
+.cont2 .row100 .col{
+    
+    position: relative;
+    width: 100%;
+    padding: 0 10px;
+    margin: 30px 0 20px;
+}
+
+.cont2 .row100 .col .inputBox{
+    position: relative;
+    width: 100%;
+    height: 40px; 
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    letter-spacing: 3px;
+    color: #B8C1EC;
+    opacity: 71%;  
+}
+
+.cont2 .row100 .col .inputBox input,
+.cont2 .row100 .col .inputBox textArea{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    padding: 0 10px;
+    z-index: 1;
+    color: #000;
+
+}
+
+.cont2 .row100 .col .inputBox .text{
+    position: absolute;
+    top: 0;
+    left: 0;
+    line-height: 40px;
+    font-size: 18px;
+    padding: 0 10px;
+    display: block;
+    transition: 0.5s;
+    pointer-events: none;
+
+}
+
+.cont2 .row100 .col .inputBox.textarea{
+    position: relative;
+    width: 100%;
+    height: 100px;
+    padding: 10px 0;
+    } 
+
+.cont2 .row100 .col .inputBox input:focus + .text,
+.cont2 .row100 .col .inputBox input:valid + .text,
+.cont2 .row100 .col .inputBox textarea:focus + .text,
+.cont2 .row100 .col .inputBox textarea:valid + .text{
+
+    top: -35px;
+    left: -10px;
+
+}
+
+.cont2 .row100 .col .inputBox .line{
+
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 95%;
+    height: 2px;
+    background: #fff;
+    transition: 0.5s;
+    border-radius: 2px;
+    pointer-events: none;
+
+}
+
+.cont2 .row100 .col .inputBox input:focus ~ .line,
+.cont2 .row100 .col .inputBox input:valid ~ .line,
+.cont2 .row100 .col .inputBox textarea:focus ~ .line,
+.cont2 .row100 .col .inputBox textarea:valid ~ .line{
+
+    height: 100%;
+}
+
+.cont2 .row100 .col input[type="submit"]{
+    border: none;
+    width: 150px;
+    cursor: pointer;
+    outline: none;
+    background: #eebbc3;
+    padding: 10px 20px;
+    color: #232946;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    font-family: 'Montserrat', sans-serif ;
+
+}
